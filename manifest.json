@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "content_scripts": [ {
+        "js":               [ "jquery.min.js",
+                              "piazza.user.js" ],
+        "matches":          [ "https://piazza.com/*",
+                              "http://piazza.com/*"   ],
+        "exclude_globs":    [  ],
+        "include_globs":    [ "*" ],
+        "run_at": "document_end"
+    } ],
+    "converted_from_user_script": true,
+    "description":  "Piazza/Autograder quick link",
+    "name":         "Piazza to Autograder",
+    "version":      "0.3"
+}
